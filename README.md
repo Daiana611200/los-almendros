@@ -1,21 +1,35 @@
-# **LOS ALMENDROS** Frutos Secos
+# **LOS ALMENDROS**
 
 ## Tienda online saludable 🌱
 
-### E-commerce
+### React E-commerce by Daiana González
 
 ___
-Bienvenidos a _Los Almendros_, donde ofrecemos una amplia selección de frutos secos, cereales, y otros productos naturales y saludables. 
+## Introducción
 
-* Diversos medios de pagos:  efectivo, débito o transferencia
+Los Almendros es un Proyecto creado con Vite.dev y se dio estilo con Chakra.ui.
 
-* 🚛 Envíos a domicilio • Bahía Blanca
+Se utilizaron los siguientes recursos:
+* ReactDOM
+* react-router-dom
+* json
+* Hooks
+---
+## Características
+* Home
+* Catalogue: Producto
+* Category: Categoría
+* Atributo y grupo de atributos
+* Navegación por capas de productos
+* Gestión de pedidos
+* Gestión de clientes
+---
 
-_Podés conocer nuestros productos, a través de nuestra Tienda online o visitando nuestro [Instagram]():_
-
+## Funcionalidad 
+Podés ver cómo funciona la APP en este [GIF](https://www.canva.com/design/DAFbQi8heLs/pV1vho1wlGC244p9foTZzw/edit?utm_content=DAFbQi8heLs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ___
 
-Proyecto (en proceso...) realizado por: © 2023 Daiana González 
+© 2023 Daiana González 
 
 Contacto e Info:
 

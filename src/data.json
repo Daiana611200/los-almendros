@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "name": "Almendras peladas",
+      "price": 3500,
+      "weight": 1,
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+      "stock": 15,
+      "category": "Frutos secos y deshidratados"
+    },
+
+    {
+        "id": 2,
+        "name": "Nueces peladas",
+        "price": 1500,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 25,
+        "category": "Frutos secos y deshidratados"
+      },
+
+      {
+        "id": 3,
+        "name": "Catsañas de Cajú",
+        "price": 4200,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 5,
+        "category": "Frutos secos y deshidratados"
+      },
+
+      {
+        "id": 4,
+        "name": "Maní tostado sin sal",
+        "price": 550,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 25,
+        "category": "Frutos secos y deshidratados"
+      },
+
+      {
+        "id": 5,
+        "name": "Pasas de uva morochas",
+        "price": 1200,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 10,
+        "category": "Frutos secos y deshidratados"
+      },
+
+      {
+        "id": 6,
+        "name": "Copos de maíz sin azúcar",
+        "price": 950,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 10,
+        "category": "Cereales"
+      },
+
+      {
+        "id": 7,
+        "name": "Bolitas de chocolate",
+        "price": 980,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 8,
+        "category": "Cereales"
+      },
+
+      {
+        "id": 8,
+        "name": "Aritos de miel",
+        "price": 900,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 5,
+        "category": "Cereales"
+      },
+
+      {
+        "id": 9,
+        "name": "Semillas de sésamo integral",
+        "price": 650,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 10,
+        "category": "Semillas"
+      },
+
+      {
+        "id": 10,
+        "name": "Semillas de chía",
+        "price": 1200,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 5,
+        "category": "Semillas"
+      },
+
+      {
+        "id": 11,
+        "name": "Semillas de lino",
+        "price": 550,
+        "weight": 1,
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti aut dignissimos explicabo ab, cumque eligendi ducimus numquam quibusdam minima.",
+        "stock": 4,
+        "category": "Semillas"
+      }
+]
