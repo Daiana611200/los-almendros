@@ -11,13 +11,30 @@ import {
     Divider,
     Alert,
   } from "@chakra-ui/react";
-  import frutos from '../assets/images/frutossecos.jpg';  
   import { useParams } from "react-router-dom";
+  import { useEffect, useState } from "react";
   import ItemCount from "./ItemCount";
-  
+  import { doc, getDoc, getFirestore } from "firebase/firestore";
+
   const ItemDetail = ({ productos }) => {
     const { id } = useParams();
-      
+  
+    const [producto, setProducto] = useState([]);
+
+    useEffect(() => {
+      const db = getFirestore();
+  
+      const productoRef = doc(db, "Productos", `${id}`);
+  
+      getDoc(productoRef).then((snapshot) => {
+        if (snapshot.exists()) {
+          setProducto(snapshot.data());
+        } else {
+          console.log("No existe el documento!");
+        }
+      });
+    }, []);
+  
     const productoFilter = productos.filter((producto) => producto.id == id);
   
     return (
@@ -30,9 +47,6 @@ import {
                   <Image borderRadius="lg" src={frutos} />
                   <Stack mt="6" spacing="3">
                     <Heading size="md">{producto.name}</Heading>
-                    <Text color="blue.800" fontSize="l">
-                      Descripción: {producto.description}
-                    </Text>
                     <Text color="blue.800" fontSize="l">
                       Categoría: {producto.category}
                     </Text>

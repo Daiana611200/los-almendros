@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from 'react-router-dom'
 
-const Item = ({ id, name, stock, category }) => {
+const Item = ({ id, name, stock, category, image }) => {
   return (
     <div>
       <div key={id}>

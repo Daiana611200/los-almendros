@@ -1,4 +1,3 @@
-
 import { Heading, Center, Box, Image } from "@chakra-ui/react";
 
 const Home = () => {

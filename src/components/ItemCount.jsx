@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   Text,
   ButtonGroup,
@@ -8,9 +8,11 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+import { ShoppingCartContext } from "../context/ShoppingCartContext";
 
 const ItemCount = ({ stock, id, price, name }) => {
-    const [count, setCount] = useState(1);
+  const [cart, setCart] = useContext(ShoppingCartContext);
+  const [count, setCount] = useState(1);
 
   const addQty = () => {
     setCount(count + 1);
@@ -53,7 +55,7 @@ const ItemCount = ({ stock, id, price, name }) => {
             variant="solid"
             colorScheme="blue"
           >
-            Add to cart: {count}
+            Agregar al carrito: {count}
           </Button>
         </Center>
         {count < stock ? (

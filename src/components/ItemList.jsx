@@ -12,9 +12,9 @@ const ItemList = ({ productos }) => {
             name={producto.name}
             price={producto.price}
             weight={producto.weight}
-            description={producto.description}
             stock={producto.stock}
             category={producto.category}
+            image={producto.image}
           />
         ))}
       </Container>

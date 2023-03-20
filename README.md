@@ -2,18 +2,23 @@
 
 ## Tienda online saludable 🌱
 
-### React E-commerce by Daiana González
+### ReactJs E-commerce by Daiana González
 
 ___
 ## Introducción
 
 Los Almendros es un Proyecto creado con Vite.dev y se dio estilo con Chakra.ui.
 
-Se utilizaron los siguientes recursos:
-* ReactDOM
-* react-router-dom
-* json
-* Hooks
+* Para ejecutar el Proyecto:
+
+    ````npm run dev````
+
+* Se utilizaron los siguientes recursos:
+1. Vite
+1. Chakra.UI
+1. ReactDOM
+1. React-router-dom
+1. Hooks
 ---
 ## Características
 * Home

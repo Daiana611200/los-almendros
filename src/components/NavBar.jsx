@@ -34,14 +34,14 @@ const NavBar = () => {
             </Heading>
           </Box>
           <Spacer />
-          <Box>
 
-        <Menu>
-        <Link to={"/catalogue"}> 
-        <Button colorScheme='gray' variant='solid'm="5">
+          <Box>
+            <Menu>
+            <Link to={"/catalogue"}> 
+            <Button colorScheme='gray' variant='solid'm="5">
     Productos
-        </Button>        
-        </Link>
+            </Button>        
+           </Link>
 
         <MenuButton as={Button} rightIcon={<ChevronDownIcon m="5"/>}>
     Categorías 
@@ -59,12 +59,14 @@ const NavBar = () => {
             <MenuItem>Semillas</MenuItem>
           </Link>
           </MenuList>
-        </Menu>
-
-        <CartWidget />
-      
-        </Box>
-       <Spacer />
+         </Menu>
+        </Box>  
+        <Spacer />
+        <Box p="10" w="300px" h="100">
+         <Link to={"/cart"}>
+          <CartWidget />
+         </Link>
+         </Box>
       </Flex>
     </Container>
     </nav>
