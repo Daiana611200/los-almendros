@@ -16,6 +16,8 @@ import {
     const [orderId, setOrderId] = useState(null);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    
+    const db = getFirestore();
   
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -26,25 +28,23 @@ import {
       }
       setEmail(" ");
     };
-  
-    const db = getFirestore();
+    const order = {
+        name,
+        email,
+      };
+
     const ordersCollection = collection(db, "orden");
   
-    const order = {
-      name,
-      email,
-    };
-  
-    return (
+      return (
       <div>
         <Center>
-          <Heading>Eviar orden</Heading>
+          <Heading>Enviar orden</Heading>
         </Center>
   
         <Container>
           <FormControl>
             <form onSubmit={handleSubmit}>
-              <FormLabel>NOMBRE</FormLabel>
+              <FormLabel>Nombre y Apellido</FormLabel>
               <Input size="lg" onChange={(e) => setName(e.target.value)} />
               <FormLabel>EMAIL</FormLabel>
               <Input size="lg" onChange={(e) => setEmail(e.target.value)} />

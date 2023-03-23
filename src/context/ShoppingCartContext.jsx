@@ -2,7 +2,7 @@ import {useState, createContext} from "react";
 
 export const ShoppingCartContext = createContext(null);
 
-export const ShoppingCartContextProvider = ({ children }) => {
+ const ShoppingCartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
     return (
@@ -12,3 +12,4 @@ export const ShoppingCartContextProvider = ({ children }) => {
     )
 }
 
+export default ShoppingCartContextProvider;

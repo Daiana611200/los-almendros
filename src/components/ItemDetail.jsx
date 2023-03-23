@@ -16,9 +16,9 @@ import {
   import ItemCount from "./ItemCount";
   import { doc, getDoc, getFirestore } from "firebase/firestore";
 
-  const ItemDetail = ({ productos }) => {
+  const ItemDetail = ({}) => {
     const { id } = useParams();
-  
+
     const [producto, setProducto] = useState([]);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ import {
       });
     }, []);
   
-    const productoFilter = productos.filter((producto) => producto.id == id);
+    const productoFilter = producto.filter((producto) => producto.id == id);
   
     return (
       <>

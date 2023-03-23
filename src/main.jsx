@@ -15,9 +15,9 @@ const firebaseConfig = {
     measurementId: "G-RGLVZJ5JKK"
   }; 
 
-initializeApp(firebaseConfig);
+  initializeApp(firebaseConfig);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ ReactDOM.createRoot(document.getElementById('root')).render(
     <ChakraProvider>
        <App />
     </ChakraProvider>
