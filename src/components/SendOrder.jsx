@@ -13,12 +13,18 @@ import {
   import { useState } from "react";
   
   const SendOrder = () => {
-    const [orderId, setOrderId] = useState(null);
+    const [orderId, setOrderId] = useState();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     
     const db = getFirestore();
-  
+    const ordersCollection = collection(db, "orden");
+    
+    const order = {
+          name,
+          email,
+        };
+    
     const handleSubmit = (e) => {
       e.preventDefault();
       if (name === "" || email === "") {
@@ -28,14 +34,8 @@ import {
       }
       setEmail(" ");
     };
-    const order = {
-        name,
-        email,
-      };
-
-    const ordersCollection = collection(db, "orden");
   
-      return (
+    return (
       <div>
         <Center>
           <Heading>Enviar orden</Heading>
@@ -46,7 +46,7 @@ import {
             <form onSubmit={handleSubmit}>
               <FormLabel>Nombre y Apellido</FormLabel>
               <Input size="lg" onChange={(e) => setName(e.target.value)} />
-              <FormLabel>EMAIL</FormLabel>
+              <FormLabel>Email</FormLabel>
               <Input size="lg" onChange={(e) => setEmail(e.target.value)} />
               <Button colorScheme="blue" type="submit" m={5}>
                 Guardar Información

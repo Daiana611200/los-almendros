@@ -8,7 +8,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
-import ShoppingCartContext from "../context/ShoppingCartContext";
+import ShoppingCartContext from "../context/ShoppingCartContextProvider";
 
 const ItemCount = ({ stock, id, price, name }) => {
   const[cart, setCart] = useContext(ShoppingCartContext);

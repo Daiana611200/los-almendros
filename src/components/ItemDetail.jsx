@@ -16,7 +16,7 @@ import {
   import ItemCount from "./ItemCount";
   import { doc, getDoc, getFirestore } from "firebase/firestore";
 
-  const ItemDetail = ({}) => {
+  const ItemDetail = ({ productos }) => {
     const { id } = useParams();
 
     const [producto, setProducto] = useState([]);
@@ -35,7 +35,7 @@ import {
       });
     }, []);
   
-    const productoFilter = producto.filter((producto) => producto.id == id);
+    const productoFilter = productos.filter((producto) => producto.id == id);
   
     return (
       <>
@@ -44,7 +44,7 @@ import {
             <Center p="1rem">
               <Card className="card-main">
                 <CardBody>
-                  <Image borderRadius="lg" src={frutos} />
+                  <Image borderRadius="lg" src={producto.image} />
                   <Stack mt="6" spacing="3">
                     <Heading size="md">{producto.name}</Heading>
                     <Text color="blue.800" fontSize="l">

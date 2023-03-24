@@ -1,9 +1,9 @@
 import { useContext } from 'react'
-import ShoppingCartContext from "../context/ShoppingCartContext";
+import { ShoppingCartContext } from "../context/ShoppingCartContextProvider";
 import { Button } from '@chakra-ui/react'
 
 const CartWidget = () => {
-  const [cart, setCart] = useContext(ShoppingCartContext);
+  const { cart, setCart } = useContext(ShoppingCartContext);
 
   const quantity = cart.reduce((acc, curr) => {
     return acc + curr.quantity;

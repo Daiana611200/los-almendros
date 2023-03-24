@@ -24,7 +24,7 @@ const catFilter = productos.filter((producto) => producto.category === category)
   
 return (
     <div>
-      {category ? <ItemList productos={catFilter} /> : <ItemList productos={ productos } />}
+      {category ? <ItemList productos={catFilter} /> : <ItemList productos={productos} />}
     </div>
   );
 };

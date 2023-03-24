@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useContext } from "react"
-import ShoppingCartContext from "../context/ShoppingCartContext";
+import { ShoppingCartContext } from "../context/ShoppingCartContextProvider";
 import SendOrder from "./SendOrder";
 import {
   FormControl,

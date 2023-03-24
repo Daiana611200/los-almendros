@@ -1,5 +1,4 @@
 import React from 'react'
-import frutos from '../assets/images/frutossecos.jpg'
 import {
   Center,
   Card,
@@ -21,7 +20,7 @@ const Item = ({ id, name, stock, category, image }) => {
         <Center p="1rem">
           <Card className="card-main">
             <CardBody>
-              <Image borderRadius="lg" src={frutos} />
+              <Image borderRadius="lg" src={image} />
               <Stack mt="6" spacing="3">
                 <Heading size="md">{name}</Heading>
 
@@ -37,7 +36,7 @@ const Item = ({ id, name, stock, category, image }) => {
             <CardFooter className="card-footer">
               <Center className="btn-center">
                 <Button variant="solid" colorScheme="green">
-                  <Link to={`/item/${id}`}>Detalles</Link>
+                  <Link to={`/item/ + ${id}`}>Detalles</Link>
                 </Button>
               </Center>
             </CardFooter>

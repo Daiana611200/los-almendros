@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import { ChakraProvider } from '@chakra-ui/react'
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app"
 
 const firebaseConfig = {
     apiKey: "AIzaSyCNVFavbDVRXIK-vFd96PDG3EHpnEyxo_s",
