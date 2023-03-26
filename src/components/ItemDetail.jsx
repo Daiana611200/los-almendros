@@ -19,7 +19,7 @@ import {
   const ItemDetail = ({ productos }) => {
     const { id } = useParams();
 
-    const [producto, setProducto] = useState([]);
+    const [producto, setProducto] = useState({});
 
     useEffect(() => {
       const db = getFirestore();
@@ -28,14 +28,14 @@ import {
   
       getDoc(productoRef).then((snapshot) => {
         if (snapshot.exists()) {
-          setProducto(snapshot.data());
+          setProducto({ id: snapshot.id, ...snapshot.data() });
         } else {
           console.log("No existe el documento!");
         }
       });
     }, []);
   
-    const productoFilter = productos.filter((producto) => producto.id == id);
+    const productoFilter = productos.filter((producto) => producto.id === id);
   
     return (
       <>

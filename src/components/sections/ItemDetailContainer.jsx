@@ -4,11 +4,12 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState([]);
+
   useEffect(() => {
     const db = getFirestore();
     const productosCollection = collection(db, "Productos");
-    getDocs(productosCollection).then((querySnapshot) => {
-      const productos = querySnapshot.docs.map((doc) => ({
+    getDocs(productosCollection).then((snapshot) => {
+      const productos = snapshot.docs.map((doc) => ({
         ...doc.data(),
         id: doc.id,
       }));
